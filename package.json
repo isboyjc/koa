@@ -1,0 +1,19 @@
+{
+  "name": "koa",
+  "version": "1.0.0",
+  "description": "koa 核心源码实现",
+  "main": "index.js",
+  "repository": "https://github.com/isboyjc/koa.git",
+  "author": "isboyjc <214930661@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node index.js",
+    "http:serve": "node http.js",
+    "express:serve": "node express.js",
+    "koa:serve": "node koa.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "koa": "^2.11.0"
+  }
+}
