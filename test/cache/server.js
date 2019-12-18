@@ -24,7 +24,7 @@ const cache = new Cache({
 
 // 缓存配置修改
 cache.cachesInterface = [{path:"/data",method:"get"},{path:"/list",method:"post"}]
-cache.cachesTime = 6000
+cache.cachesTime = 5000
 
 // 使用缓存中间件
 app.use(cache.init)
