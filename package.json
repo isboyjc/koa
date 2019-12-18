@@ -10,10 +10,12 @@
     "serve": "node index.js",
     "http:serve": "node http.js",
     "express:serve": "node express.js",
-    "koa:serve": "node koa.js"
+    "koa:serve": "node koa.js",
+    "test:cache": "node test/cache/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
-    "koa": "^2.11.0"
+    "koa": "^2.11.0",
+    "request": "^2.88.0"
   }
 }
