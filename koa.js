@@ -9,18 +9,18 @@
 const Koa = require("koa")
 const app = new Koa()
 
-app.use(async (ctx,next)=>{
+app.use(async (ctx, next) => {
   const start = new Date().getTime()
   console.log(`start,request url:${ctx.url}`)
   await next()
   const end = new Date().getTime()
-  console.log(`end,request url:${ctx.url},耗时:${parseInt(end-start)}ms`)
+  console.log(`end,request url:${ctx.url},耗时:${parseInt(end - start)}ms`)
 })
 
-app.use((ctx,next)=>{
+app.use((ctx, next) => {
   ctx.body = [
     {
-      msg:"这是一个koa接口！"
+      msg: "这是一个koa接口！"
     }
   ]
 })
